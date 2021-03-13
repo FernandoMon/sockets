@@ -14,7 +14,7 @@ Prerequisitos
 - Utilizar el comando `cd sockets` para acceder a la carpeta del proyecto
 - Utilizar el comando `composer install`
 - Utilizar el comando `copy .env.example .env`
-- *Abrir el archivo .env creado con el comando anterior y cambiar el nombre de la base de datos (DB_DATABASE) al correspondiente, el nombre de usuario (DB_USERNAME) y la contraseña (DB_PASSWORD). Agregar las siguientes variables al archivo BROADCAST_DRIVER=redis, QUEUE_CONNECTION=redis, REDIS_CLIENT=predis*. 
+- *Abrir el archivo .env creado con el comando anterior y cambiar el nombre de la base de datos (DB_DATABASE) al correspondiente, el nombre de usuario (DB_USERNAME) y la contraseña (DB_PASSWORD). Agregar las siguientes variables al archivo BROADCAST_DRIVER=redis, QUEUE_CONNECTION=redis, REDIS_CLIENT=predis, BARRIER_TOKEN={add your auth_token}*. 
 - Utilizar el comando `php artisan key:generate`
 - *Utilizar el comando `php artisan migrate`*
 - Utilizar el comando `npm install`
