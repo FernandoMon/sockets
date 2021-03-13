@@ -108,7 +108,7 @@ class GuideController extends Controller
             ]
         ];
 
-        $response = Http::withToken("87a4a36ef728f3cc44fb4f7a118ae7346351fe9fd4ba60caa6aea93e769a8783")
+        $response = Http::withToken(env("BARRIER_TOKEN"))
                         ->post('https://api-test.envia.com/ship/generate',$guide_request);
         if ($response->successful()){
             event(new GuideCreated());

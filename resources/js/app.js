@@ -1,8 +1,9 @@
 require('./bootstrap');
 
-Echo.channel('guides-channel')
-    .listen('GuideCreated', (data) => {
-        console.log(data)
+window.Echo.channel('guides-channel')
+    .listen('.GuideCreated', (data) => {
+        let guide_count = document.querySelector("#guides_count");
+        guide_count.innerHTML = data.guides;
     })
 
-console.log('App.js');
+

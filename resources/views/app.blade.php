@@ -13,7 +13,7 @@
 
     <script type="text/javascript" src="https://cdn.datatables.net/v/ju-1.12.1/jq-3.3.1/dt-1.10.23/datatables.min.js"></script>
 
-    <script src="{{ asset('js/app.js') }}"></script>
+
     <title>Hello, world!</title>
 </head>
 <body>
@@ -39,6 +39,6 @@
 <div class="container shadow rounded mt-5 p-3">
     @yield('content')
 </div>
-
+<script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>
